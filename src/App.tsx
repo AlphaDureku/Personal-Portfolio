@@ -101,7 +101,7 @@ function App() {
               <Cards
                 src="/images/project3.png"
                 description="One of my very first projects inspired by Genshin Impact using vanilla HTML, CSS and JavaScript"
-                title="Genshin Simpact."
+                title="Genshin Simpact"
                 link="https://genshinsimpact.netlify.app/"
               />
             </div>
@@ -110,7 +110,7 @@ function App() {
               <Cards
                 src="/images/project4.png"
                 description="My first ever portfolio as a web developer. Built using React JS Vite and React Bootstrap."
-                title="test"
+                title="My Portfolio"
                 link="https://silver-creponne-ffd96e.netlify.app"
               />
             </div>
