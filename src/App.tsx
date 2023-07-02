@@ -4,6 +4,7 @@ import ControlledCarousel from "./components/Hero Section/Carousel";
 import Wave from "./components/Wave";
 import Cards from "./components/card";
 import Navbar from "./components/navbar";
+import FooterWave from "./components/wavefooter";
 
 function App() {
   useEffect(() => {
@@ -118,7 +119,12 @@ function App() {
         </section>
         <section className=""></section>
       </main>
-      <footer></footer>
+      <footer className="hidden">
+        <div className="footerWave ">
+          <FooterWave />
+        </div>
+        <div></div>
+      </footer>
     </>
   );
 }
