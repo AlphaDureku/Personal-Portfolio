@@ -33,8 +33,16 @@ function ControlledCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Contact Me</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>About Me</h3>
+          <p>
+            I am confident with my skills in various programming knowledge
+            especially JavasScript and know different JavaScript frameworks for
+            both frontend and backend, such as React JS, Express JS and MySQL.{" "}
+            I've worked with different projects since the start of my college
+            and had become a lead programmer in one of our capstone project.
+            Overall I'm passionate about taking on new challenges and
+            contributing to more projects.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -45,9 +53,10 @@ function ControlledCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Contact Me</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            For further questions, please contact by clicking on this link{" "}
+            <a>Contact Me</a>
           </p>
         </Carousel.Caption>
       </Carousel.Item>

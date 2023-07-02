@@ -80,21 +80,20 @@ main {
   gap: 5%;
 }
 .firstRow_imgContainer {
-  width: 15vw;
+  width: 18vw;
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .secondRow_imgContainer {
-  width: 35vw;
+  width: 40vw;
   animation: 1s ease-out 0s 1 slideInFromRight;
 }
 .third_imgContainer {
-  width: 29vw;
+  width: 32vw;
   animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .hero-first_row {
   font-size: 5rem;
-  font-weight: 600;
 }
 .hero-sec > div > span {
   animation: 1s ease-out 0s 1 slideInFromTop;
@@ -106,7 +105,6 @@ main {
 
 .hero-third_row {
   font-size: 7rem;
-  font-weight: 600;
 }
 
 .hero-img {
@@ -114,6 +112,7 @@ main {
   border-radius: 50px;
   height: 120px;
   width: 100%;
+  box-shadow: 0px 0px 5px #fff;
 }
 
 .hero-img2 {
@@ -121,11 +120,13 @@ main {
   border-radius: 50px 0 50px 50px;
   height: 200px;
   object-fit: cover;
+  box-shadow: 0px 0px 5px #fff;
 }
 
 .hero-img3 {
   width: 100%;
   border-radius: 0px 50px 50px 0px;
+  box-shadow: 0px 0px 5px #fff;
   height: 200px;
   object-fit: cover;
 }
@@ -198,7 +199,7 @@ main {
 
 .hidden {
   opacity: 0;
-  transition: all 3.2s;
+  transition: all 2.5s;
 }
 .show {
   opacity: 1;
@@ -207,11 +208,12 @@ main {
 .carousel {
   z-index: 1;
   height: 50vh;
-  width: 86%;
+  width: 88%;
   margin: 0 auto;
   border-radius: 1vw;
   overflow: hidden;
   animation: 1s ease-out 0s 1 slideInFromBottom;
+  margin-bottom: 4%;
 }
 
 .carousel-img {
@@ -221,6 +223,7 @@ main {
   filter: blur(8px);
   overflow: hidden;
   border-radius: 8px;
+  box-shadow: 0px 0px 5px #fff;
 }
 
 .carousel-sec {
@@ -228,6 +231,28 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 10%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+}
+
+.projects h2 {
+  margin-bottom: 2%;
+  font-size: 3rem;
+}
+
+.grid-projects {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5%;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
 }
 
 @keyframes slideInFromLeft {
