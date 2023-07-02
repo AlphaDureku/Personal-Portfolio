@@ -26,8 +26,15 @@ export default function Cards({ src, title, description, link }: Props) {
           <Card.Title style={{ color: "#33ab5d" }}>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
           <a href={link}>
-            <Button style={{ background: "#33ab5d", border: "none" }}>
-              Click Me to Visit
+            <Button
+              style={{
+                background: "#33ab5d",
+                border: "none",
+                borderRadius: "8px",
+                padding: "8px 15px 8px 15px",
+              }}
+            >
+              Click me to Visit
             </Button>
           </a>
         </Card.Body>

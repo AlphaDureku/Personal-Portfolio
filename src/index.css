@@ -249,6 +249,10 @@ main {
   margin-bottom: 4%;
 }
 
+.carousel-caption {
+  font-size: 1.5rem;
+}
+
 .carousel-img {
   object-fit: cover;
   width: 100%;
@@ -290,13 +294,71 @@ main {
 }
 footer {
   position: relative;
-  margin-top: 40%;
+  margin-top: 10%;
 }
 .footerWave {
   position: absolute;
   bottom: 0;
   opacity: 60%;
   width: 100%;
+  z-index: -1;
+}
+.footerContainer {
+  display: flex;
+  height: 50vh;
+}
+
+.footerContainer > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.footerContainer > div:nth-child(2) {
+  width: 50%;
+}
+
+.icon_buttons {
+  margin: 5px 0;
+}
+
+.icon_buttons:hover {
+  transform: scale(1.3);
+}
+
+.top-form {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+.top-form > div {
+  width: 100%;
+}
+
+.top-form input {
+  width: 100%;
+}
+
+.bottom-form {
+  margin-top: 5%;
+  width: 100%;
+}
+.bottom-form textarea {
+  height: 200px;
+  width: 100%;
+}
+.buttonContainer {
+  text-align: end;
+}
+
+.submitForm {
+  background-color: #33ab5d;
+  border: 1px solid black;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-top: 2%;
 }
 
 @keyframes slideInFromLeft {

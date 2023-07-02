@@ -17,7 +17,7 @@ function ControlledCarousel() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Hello!</h3>
+          <h1>Hello!</h1>
           <p>
             I am Mark Angelo S. Templanza, and I am currently looking for an
             internship program that would further enhance my skills in Web
@@ -31,9 +31,8 @@ function ControlledCarousel() {
           src="/images/carousel2.jpg"
           alt="Second slide"
         />
-
         <Carousel.Caption>
-          <h3>About Me</h3>
+          <h1>About Me</h1>
           <p>
             I am confident with my skills in various programming knowledge
             especially JavasScript and know different JavaScript frameworks for
@@ -53,7 +52,7 @@ function ControlledCarousel() {
         />
 
         <Carousel.Caption>
-          <h3>Contact Me</h3>
+          <h1>Contact Me</h1>
           <p>
             For further questions, please contact by clicking on this link{" "}
             <a>Contact Me</a>

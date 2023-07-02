@@ -1,10 +1,11 @@
 import { useEffect } from "react";
+
 import "./App.css";
 import ControlledCarousel from "./components/Hero Section/Carousel";
 import Wave from "./components/Wave";
 import Cards from "./components/card";
+import Footer from "./components/footer";
 import Navbar from "./components/navbar";
-import FooterWave from "./components/wavefooter";
 
 function App() {
   useEffect(() => {
@@ -77,7 +78,7 @@ function App() {
           </div>
         </section>
         <hr></hr>
-        <section className="projects ">
+        <section className="projects hidden">
           <h2>My Projects</h2>
           <div className="grid-projects hidden">
             <div>
@@ -120,10 +121,7 @@ function App() {
         <section className=""></section>
       </main>
       <footer className="hidden">
-        <div className="footerWave ">
-          <FooterWave />
-        </div>
-        <div></div>
+        <Footer />
       </footer>
     </>
   );
