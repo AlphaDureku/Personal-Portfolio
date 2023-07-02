@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Card } from "react-bootstrap";
 import "./App.css";
 import ControlledCarousel from "./components/Hero Section/Carousel";
 import Wave from "./components/Wave";
