@@ -378,7 +378,7 @@ footer {
 }
 .bottom-form textarea {
   width: 100%;
-  max-height: 100%;
+  height: 25vh;
 }
 .buttonContainer {
   text-align: end;
@@ -484,6 +484,9 @@ footer {
   .icon_buttons .tooltipText {
     top: -120%;
     left: -25%;
+  }
+  .bottom-form textarea {
+    max-height: 100%;
   }
 }
 
