@@ -1,3 +1,4 @@
+import axios from "axios";
 import { MDBIcon } from "mdb-react-ui-kit";
 import { useState } from "react";
 import { Button } from "react-bootstrap";
@@ -11,13 +12,22 @@ export default function Footer() {
   }>({ name: "", email: "", descriptions: "" });
 
   const onChangeHandler = (event: any): void => {
-    event.preventDefault();
     const { value, name } = event.target;
     setSenderInfo((prev) => ({ ...prev, [name]: value }));
   };
 
-  const onSubmitHandler = () => {
-    console.log(senderInfo);
+  const onSubmitHandler = (event: any) => {
+    event.preventDefault();
+    try {
+      axios.post("http://localhost:4000/send-email", {
+        name: senderInfo.name,
+        from: senderInfo.email,
+        text: senderInfo.descriptions,
+      });
+      return;
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -30,11 +40,13 @@ export default function Footer() {
           <Button
             className="icon_buttons bounce"
             style={{ backgroundColor: "#3b5998" }}
-            href="#!"
+            href="https://www.facebook.com/markangelo.templanza"
             role="button"
           >
             <MDBIcon fab icon="facebook" className="icon" />
-            <span className="tooltipText">Tooltip</span>
+            <span className="tooltipText">
+              https://www.facebook.com/markangelo.templanza
+            </span>
           </Button>
           <Button
             className="icon_buttons bounce"
@@ -59,11 +71,13 @@ export default function Footer() {
           <Button
             className="icon_buttons bounce"
             style={{ backgroundColor: "#ac2bac" }}
-            href="#!"
+            href="https://www.instagram.com/markangelotemplanza/"
             role="button"
           >
             <MDBIcon fab icon="instagram" className="icon" />
-            <span className="tooltipText">Tooltip</span>
+            <span className="tooltipText">
+              https://www.instagram.com/markangelotemplanza/
+            </span>
           </Button>
           <Button
             className="icon_buttons bounce"
@@ -92,13 +106,14 @@ export default function Footer() {
               <h1>Get In Touch</h1>
             </div>
             <div className="sub-title-form">
-              Think I'd be a good fit on contributing with your company? Send me
-              a message so we can discuss about it!
+              Do you think I would be a good fit for contributing to your
+              company? Please send me a message so that we can discuss it
+              further!
             </div>
             <div>
               <div className="top-form">
                 <div>
-                  <label htmlFor="name">Your Name</label>
+                  <label htmlFor="name">Your Name:</label>
                   <br></br>
 
                   <input
@@ -111,7 +126,7 @@ export default function Footer() {
                   ></input>
                 </div>
                 <div>
-                  <label htmlFor="email">Your Email </label>
+                  <label htmlFor="email">Your Email: </label>
                   <br></br>
                   <input
                     type="email"
@@ -125,7 +140,7 @@ export default function Footer() {
               </div>
               <div className="bottom-form">
                 <div>
-                  <label htmlFor="descriptions">Descriptions</label>
+                  <label htmlFor="descriptions">Message:</label>
                   <br></br>
                   <textarea
                     name="descriptions"
