@@ -277,6 +277,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 4%;
+  margin-bottom: 20%;
 }
 
 .projects h2 {
@@ -479,6 +480,10 @@ footer {
   }
   .carousel-caption {
     margin-bottom: 42%;
+  }
+  .icon_buttons .tooltipText {
+    top: -120%;
+    left: -25%;
   }
 }
 

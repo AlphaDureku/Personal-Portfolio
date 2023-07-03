@@ -118,7 +118,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className=""></section>
+        <hr></hr>
       </main>
       <footer className="hidden">
         <Footer />
