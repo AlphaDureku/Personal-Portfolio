@@ -80,8 +80,8 @@ function App() {
         <hr></hr>
         <section className="projects hidden">
           <h2>My Projects</h2>
-          <div className="grid-projects hidden">
-            <div>
+          <div className="grid-projects">
+            <div className="hidden">
               <Cards
                 src="/images/project1.png"
                 description="Web Based Online Appointment Sytem for Medical Center Manila "
@@ -89,7 +89,7 @@ function App() {
                 link="https://manilamed.netlify.app/"
               />
             </div>
-            <div>
+            <div className="hidden">
               {" "}
               <Cards
                 src="/images/project2.png"
@@ -107,7 +107,7 @@ function App() {
                 link="https://genshinsimpact.netlify.app/"
               />
             </div>
-            <div>
+            <div className="hidden">
               {" "}
               <Cards
                 src="/images/project4.png"
