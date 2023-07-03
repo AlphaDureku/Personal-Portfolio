@@ -33,7 +33,7 @@ export default function Footer() {
             href="#!"
             role="button"
           >
-            <MDBIcon fab icon="facebook" />
+            <MDBIcon fab icon="facebook" className="icon" />
             <span className="tooltipText">Tooltip</span>
           </Button>
           <Button
@@ -42,7 +42,7 @@ export default function Footer() {
             href="https://twitter.com/templanzamark21"
             role="button"
           >
-            <MDBIcon fab icon="twitter" />
+            <MDBIcon fab icon="twitter" className="icon" />
             <span className="tooltipText">
               https://twitter.com/templanzamark21
             </span>
@@ -53,7 +53,7 @@ export default function Footer() {
             href=""
             role="button"
           >
-            <MDBIcon fab icon="google" />
+            <MDBIcon fab icon="google" className="icon" />
             <span className="tooltipText">templanzamark2002@gmail.com</span>
           </Button>
           <Button
@@ -62,7 +62,7 @@ export default function Footer() {
             href="#!"
             role="button"
           >
-            <MDBIcon fab icon="instagram" />
+            <MDBIcon fab icon="instagram" className="icon" />
             <span className="tooltipText">Tooltip</span>
           </Button>
           <Button
@@ -71,7 +71,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/mark-angelo-templanza-5b0171243/"
             role="button"
           >
-            <MDBIcon fab icon="linkedin-in" />
+            <MDBIcon fab icon="linkedin-in" className="icon" />
             <span className="tooltipText">
               https://www.linkedin.com/in/mark-angelo-templanza-5b0171243/
             </span>
@@ -82,7 +82,7 @@ export default function Footer() {
             href="https://github.com/AlphaDureku"
             role="button"
           >
-            <MDBIcon fab icon="github" />
+            <MDBIcon fab icon="github" className="icon" />
             <span className="tooltipText">https://github.com/AlphaDureku</span>
           </Button>
         </div>
