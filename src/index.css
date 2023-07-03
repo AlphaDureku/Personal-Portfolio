@@ -473,7 +473,7 @@ label {
   .footerContainer {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .footerContainer > div:nth-child(1) {
     flex-direction: row;

@@ -98,7 +98,7 @@ function App() {
                 link="https://hangman99.netlify.app/"
               />
             </div>
-            <div>
+            <div className="hidden">
               {" "}
               <Cards
                 src="/images/project3.png"
