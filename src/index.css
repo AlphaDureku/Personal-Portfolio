@@ -22,8 +22,9 @@ nav {
 nav > ul {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
+  padding: 0 10px;
 }
 
 nav > ul > li {
@@ -277,7 +278,7 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 4%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 .projects h2 {
@@ -455,6 +456,13 @@ label {
 }
 
 @media only screen and (max-width: 600px) {
+  nav > ul {
+    justify-content: center;
+  }
+  nav > ul > li {
+    margin: 0 auto;
+  }
+
   .hero-sec {
     margin: 15% 0 30% 0;
   }
@@ -501,6 +509,9 @@ label {
 
   .icon {
     margin: 2px;
+  }
+  .projects {
+    margin-bottom: 20%;
   }
 }
 
