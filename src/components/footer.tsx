@@ -24,6 +24,14 @@ export default function Footer() {
         from: senderInfo.email,
         text: senderInfo.descriptions,
       });
+      const notification = document.querySelector(".notification");
+      if (notification) {
+        notification.classList.add("slideFromRight");
+        setTimeout(() => {
+          notification.classList.remove("slideFromRight");
+          notification.classList.add("slideFromRightOut");
+        }, 3000);
+      }
       return;
     } catch (error) {
       console.log(error);

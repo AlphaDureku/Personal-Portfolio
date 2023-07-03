@@ -30,8 +30,9 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <div className="notification">Successfully Sent Message!</div>
 
+      <Navbar />
       <main>
         <section className="hero-sec">
           <div className="hero-first_row bounce">
@@ -116,10 +117,20 @@ function App() {
                 link="https://silver-creponne-ffd96e.netlify.app"
               />
             </div>
+            <div className="hidden">
+              {" "}
+              <Cards
+                src="/images/project5.png"
+                description="My First react project. Test your knowledge about different anime series."
+                title="Anime Quizzical"
+                link="https://luxury-sopapillas-5b6119.netlify.app/"
+              />
+            </div>
           </div>
         </section>
         <hr></hr>
       </main>
+
       <footer className="hidden">
         <Footer />
       </footer>

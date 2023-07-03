@@ -36,7 +36,8 @@ function ControlledCarousel() {
           <p>
             I am confident with my skills in various programming knowledge
             especially JavasScript and know different JavaScript frameworks for
-            both frontend and backend, such as React JS, Express JS and MySQL.
+            both frontend and backend, such as React JS, Bootstrap Express JS,
+            Sequelize etc.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

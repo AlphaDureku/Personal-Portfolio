@@ -239,7 +239,6 @@ main {
 .show {
   opacity: 1;
 }
-
 .carousel {
   z-index: 1;
   height: 50vh;
@@ -252,7 +251,7 @@ main {
 }
 
 .carousel-caption {
-  font-size: min(1.5rem, 3.5vw);
+  font-size: min(1.5rem, 3vw);
 }
 
 .carousel-img {
@@ -283,7 +282,7 @@ main {
 
 .projects h2 {
   margin-bottom: 5%;
-  font-size: min(3rem, 10vw);
+  font-size: min(3rem, 8vw);
 }
 
 .grid-projects {
@@ -403,6 +402,38 @@ label {
 }
 .sub-title-form {
   font-size: min(1.5rem, 4vw);
+}
+
+.notification {
+  position: fixed;
+  z-index: 99;
+  font-size: min(1rem, 4vw);
+  background-color: black;
+  border: 1px solid #33ab5d;
+  padding: 1em 3em;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.notification::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0;
+  bottom: 0;
+  width: 8px;
+  height: 95%;
+  margin: auto 0;
+  background-color: #33ab5d;
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.slideFromRight {
+  bottom: 5%;
+  right: 1%;
+  opacity: 100%;
+  animation: 0.5s ease-out 0s 1 slideInFromRight;
 }
 
 @keyframes slideInFromLeft {
