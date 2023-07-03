@@ -305,11 +305,11 @@ main {
 }
 footer {
   position: relative;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .footerWave {
   position: absolute;
-  bottom: -20%;
+  bottom: -10%;
   opacity: 60%;
   width: 100%;
   z-index: -1;
@@ -331,7 +331,6 @@ footer {
 }
 
 .icon_buttons {
-  margin: 5px 0;
   position: relative;
   display: inline-block;
 }
@@ -383,7 +382,9 @@ footer {
 .buttonContainer {
   text-align: end;
 }
-
+label {
+  font-size: min(1.2rem, 3.5vw);
+}
 .submitForm {
   background-color: #33ab5d;
   border: 1px solid black;
@@ -486,7 +487,10 @@ footer {
     left: -25%;
   }
   .bottom-form textarea {
-    max-height: 100%;
+    max-height: 15vh;
+  }
+  .footerWave {
+    bottom: -30%;
   }
 }
 
