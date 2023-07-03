@@ -36,11 +36,7 @@ function ControlledCarousel() {
           <p>
             I am confident with my skills in various programming knowledge
             especially JavasScript and know different JavaScript frameworks for
-            both frontend and backend, such as React JS, Express JS and MySQL.{" "}
-            I've worked with different projects since the start of my college
-            and had become a lead programmer in one of our capstone project.
-            Overall I'm passionate about taking on new challenges and
-            contributing to more projects.
+            both frontend and backend, such as React JS, Express JS and MySQL.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

@@ -28,52 +28,62 @@ export default function Footer() {
       <div className="footerContainer">
         <div>
           <Button
-            className="icon_buttons"
+            className="icon_buttons bounce"
             style={{ backgroundColor: "#3b5998" }}
             href="#!"
             role="button"
           >
             <MDBIcon fab icon="facebook" />
+            <span className="tooltipText">Tooltip</span>
           </Button>
           <Button
-            className="icon_buttons"
+            className="icon_buttons bounce"
             style={{ backgroundColor: "#55acee" }}
-            href="#!"
+            href="https://twitter.com/templanzamark21"
             role="button"
           >
             <MDBIcon fab icon="twitter" />
+            <span className="tooltipText">
+              https://twitter.com/templanzamark21
+            </span>
           </Button>
           <Button
-            className="icon_buttons"
+            className="icon_buttons bounce"
             style={{ backgroundColor: "#dd4b39" }}
-            href="#!"
+            href=""
             role="button"
           >
             <MDBIcon fab icon="google" />
+            <span className="tooltipText">templanzamark2002@gmail.com</span>
           </Button>
           <Button
-            className="icon_buttons"
+            className="icon_buttons bounce"
             style={{ backgroundColor: "#ac2bac" }}
             href="#!"
             role="button"
           >
             <MDBIcon fab icon="instagram" />
+            <span className="tooltipText">Tooltip</span>
           </Button>
           <Button
-            className="icon_buttons"
+            className="icon_buttons bounce"
             style={{ backgroundColor: "#0082ca" }}
-            href="#!"
+            href="https://www.linkedin.com/in/mark-angelo-templanza-5b0171243/"
             role="button"
           >
             <MDBIcon fab icon="linkedin-in" />
+            <span className="tooltipText">
+              https://www.linkedin.com/in/mark-angelo-templanza-5b0171243/
+            </span>
           </Button>
           <Button
-            className="icon_buttons"
+            className="icon_buttons bounce"
             style={{ backgroundColor: "#333333" }}
-            href="#!"
+            href="https://github.com/AlphaDureku"
             role="button"
           >
             <MDBIcon fab icon="github" />
+            <span className="tooltipText">https://github.com/AlphaDureku</span>
           </Button>
         </div>
         <div>
@@ -81,7 +91,7 @@ export default function Footer() {
             <div>
               <h1>Get In Touch</h1>
             </div>
-            <div style={{ fontSize: "1.5rem" }}>
+            <div className="sub-title-form">
               Think I'd be a good fit on contributing with your company? Send me
               a message so we can discuss about it!
             </div>
@@ -127,7 +137,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="buttonContainer">
-                <button type="submit" className="submitForm">
+                <button type="submit" className="submitForm bounce">
                   Submit Message
                 </button>
               </div>

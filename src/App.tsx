@@ -34,17 +34,17 @@ function App() {
 
       <main>
         <section className="hero-sec">
-          <div className="hero-first_row">
+          <div className="hero-first_row bounce">
             <div className="firstRow_imgContainer">
               <img
                 alt="hero"
                 src="/images/bocchi1.gif"
-                className="hero-img"
+                className="hero-img "
               ></img>
             </div>
             <span> Let's build something</span>
           </div>
-          <div className="hero-second_row">
+          <div className="hero-second_row bounce">
             <span>Amazing</span>
             <div className="secondRow_imgContainer">
               <img
@@ -54,7 +54,7 @@ function App() {
               ></img>
             </div>
           </div>
-          <div className="hero-third_row">
+          <div className="hero-third_row bounce">
             {" "}
             <div className="third_imgContainer">
               <img

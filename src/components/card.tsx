@@ -18,6 +18,7 @@ export default function Cards({ src, title, description, link }: Props) {
           borderRadius: "8px",
           overflowX: "hidden",
         }}
+        className="Card"
       >
         <a href={link}>
           <Card.Img variant="top" src={src} />
@@ -33,6 +34,7 @@ export default function Cards({ src, title, description, link }: Props) {
                 borderRadius: "8px",
                 padding: "8px 15px 8px 15px",
               }}
+              className="cardButton"
             >
               Click me to Visit
             </Button>
