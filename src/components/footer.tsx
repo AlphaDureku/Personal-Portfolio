@@ -16,14 +16,17 @@ export default function Footer() {
     setSenderInfo((prev) => ({ ...prev, [name]: value }));
   };
 
-  const onSubmitHandler = (event: any) => {
+  const onSubmitHandler = async (event: any) => {
     event.preventDefault();
     try {
-      axios.post("http://localhost:4000/send-email", {
-        name: senderInfo.name,
-        from: senderInfo.email,
-        text: senderInfo.descriptions,
-      });
+      await axios.post(
+        "https://portfolio-server-production-d58e.up.railway.app/send-email",
+        {
+          name: senderInfo.name,
+          from: senderInfo.email,
+          text: senderInfo.descriptions,
+        }
+      );
       const notification = document.querySelector(".notification");
       if (notification) {
         notification.classList.add("slideFromRight");
