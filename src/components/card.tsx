@@ -36,7 +36,7 @@ export default function Cards({ src, title, description, link }: Props) {
               }}
               className="cardButton"
             >
-              Click me to Visit
+              Click to Visit
             </Button>
           </a>
         </Card.Body>

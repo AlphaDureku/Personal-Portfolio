@@ -67,19 +67,16 @@ function App() {
             <span>Together!</span>
           </div>
         </section>
-        <section className="carousel-sec">
+        <section className="carousel-sec" id="aboutMe">
           <div className="wave">
             <Wave />
           </div>
-          <div
-            className="carousel 
-          "
-          >
+          <div className="carousel ">
             <ControlledCarousel />
           </div>
         </section>
         <hr></hr>
-        <section className="projects hidden">
+        <section className="projects hidden" id="projects">
           <h2>My Projects</h2>
           <div className="grid-projects">
             <div className="hidden">
@@ -131,7 +128,7 @@ function App() {
         <hr></hr>
       </main>
 
-      <footer className="hidden">
+      <footer className="hidden" id="ContactMe">
         <Footer />
       </footer>
     </>
