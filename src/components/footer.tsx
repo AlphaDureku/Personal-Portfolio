@@ -27,6 +27,7 @@ export default function Footer() {
           text: senderInfo.descriptions,
         }
       );
+      setSenderInfo({ name: "", email: "", descriptions: "" });
       const notification = document.querySelector(".notification");
       if (notification) {
         notification.classList.add("slideFromRight");
